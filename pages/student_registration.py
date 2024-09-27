@@ -26,4 +26,4 @@ st.subheader("Student info")
 st.write("Full name:", full_name)
 st.write("I'm ", age, "years old")
 
-st.write("I was born on ",birthday)
+st.write("I was born on ", birthday)
