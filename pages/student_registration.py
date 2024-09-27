@@ -30,7 +30,7 @@ color = st.color_picker("what is your favoret color", "#00f900")
 on = st.toggle("have you vited a school")
 
 if on:
-    st.write("Good for you!")
+    st.write("Good for you!!")
 
 
 
