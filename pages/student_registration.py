@@ -1,4 +1,5 @@
 import streamlit as st
+import datetime
 
 st.title("🐚 Welcome to Zergei Junior High!")
 
@@ -17,8 +18,12 @@ we need to collect some information from you:
 # EXAMPLE INPUT
 full_name = st.text_input("What is your full name?")
 
+age = st.slider("How old are you?", 1, 17,1)
+birthday = st.date_input("When's your birthday", datetime.date(2019, 7, 6))
 
 # EXAMPLE OUTPUT
 st.subheader("Student info")
 st.write("Full name:", full_name)
-st.write("Age:", )
+st.write("I'm ", age, "years old")
+
+st.write("I was born on ",birthday)
