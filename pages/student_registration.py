@@ -13,6 +13,7 @@ we need to collect some information from you:
 * Which sports you have played so far
 * Your favorite color
 * Have you been on your official school visit yet?
+* 
 """
 
 # EXAMPLE INPUT
@@ -25,12 +26,10 @@ genre = st.radio(
     "What's the sports you have done",
     [":rainbow[Soccer]", "***nothing***", "basketball"],
 )
+color = st.color_picker("Pick A Color", "#00f900")
+st.write("The current color is", color)
 
-color = st.color_picker("what is your favoret color", "#00f900")
-on = st.toggle("have you vited a school")
 
-if on:
-    st.write("Good for you!!")
 
 
 
@@ -49,4 +48,4 @@ st.write("I was born on ", birthday)
 
 if picture:
     st.image(picture)
-st.write("my favoet color is", color)
+st.write("my favorite color is", color)
