@@ -26,6 +26,10 @@ genre = st.radio(
     "What's the sports you have done",
     [":rainbow[Soccer]", "***nothing***", "basketball"],
 )
+on = st.toggle("have you visited a official school.")
+
+if on:
+    st.write("good for you!")
 color = st.color_picker("Pick A Color", "#00f900")
 st.write("The current color is", color)
 
