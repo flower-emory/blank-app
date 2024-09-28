@@ -60,3 +60,4 @@ if submit:
     st.write("my favorite color is", color)
     st.write("visited the school?",visit)
     st.write("the sports you have done are ",sports)
+    
