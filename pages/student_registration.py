@@ -54,10 +54,9 @@ if submit:
     st.write("I'm ", age, "years old")
 
     st.write("I was born on ", birthday)
-
+    "this is your photo"
     if picture:
         st.image(picture)
     st.write("my favorite color is", color)
     st.write("visited the school?",visit)
     st.write("the sports you have done are ",sports)
-    
