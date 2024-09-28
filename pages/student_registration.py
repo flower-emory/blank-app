@@ -26,9 +26,9 @@ genre = st.radio(
     "What's the sports you have done",
     [":rainbow[Soccer]", "***nothing***", "basketball"],
 )
-on = st.toggle("have you visited a official school.")
+visit = st.toggle("have you visited a official school.")
 
-if on:
+if visit:
     st.write("good for you!")
 color = st.color_picker("Pick A Color", "#00f900")
 st.write("The current color is", color)
@@ -53,3 +53,4 @@ st.write("I was born on ", birthday)
 if picture:
     st.image(picture)
 st.write("my favorite color is", color)
+st.write("visited the school?",visit)
