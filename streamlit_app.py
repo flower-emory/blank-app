@@ -15,6 +15,19 @@ st.title("ther are minions in the song if you skip near the midel of it")
 
 st.image('gru.webp', width=89)
 
+if st.button("Send balloons!"):
+    st.balloons()
+
+
+
+if st.button("Send snow!"):
+    st.snow()
+st.caption(f"Powered by [stlite](https://github.com/whitphx/stlite) and Streamlit {st.__version__}.")
+
+
+
+
+
 
 
 
