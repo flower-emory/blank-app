@@ -39,24 +39,10 @@ rooms = [
 ]
 
 st.title("Welcome to the dungeon! 👹")
-
-st.write("Print out the first room:")
-room = rooms[0]
-st.write(room)
-
-st.write("Print out the 3rd room:")
-rooms[2]
-
-
-st.write("Print out the last room:")
-rooms[-1]
-
-st.write("Print out the treasures in the 2nd room:")
-rooms[1]["treasures"]
-
-
-st.write("Print out the monsters in the 4th room:")
-rooms[3]["monsters"]
-
-st.write("Print out the second secret in the 6th room:")
-rooms[5]["secrets"][1]
+room_num = 1
+for room in rooms:
+    treasures=", ".join(room["treasures"])
+    st.write(f"room number {room_num} had not very many treasures: {treasures}")
+    monsters=", ".join(room["monsters"])
+    st.write(f"  it also had not very many monsters: {monsters}")
+    room_num = room_num + 1
