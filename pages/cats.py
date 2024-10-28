@@ -3,7 +3,13 @@ import streamlit as st
 
 import requests
 
-response = requests.get("https://pokeapi.co/api/v2/pokemon/19/")
+num = st.slider("", 1, 130, 25)
 
-st.image(response.json()["sprites"]["front_default"])
+response = requests.get(f"https://pokeapi.co/api/v2/pokemon/{num}/")
+
+st.image(response.json()['sprites']['other']["showdown"]["front_default"], use_column_width=True)
+
+st.image(response.json()["sprites"]["front_default"], use_column_width=True)
 # st.write(pyjokes.get_joke())
+
+
