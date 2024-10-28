@@ -1,4 +1,6 @@
-import Pyjokes
+import pyjokes
+import pyjokes as st
 
 
-st.title("hello my name is Emory")
+pyjokes
+st.write(pyjokes.get_joke())
